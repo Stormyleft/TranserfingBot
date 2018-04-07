@@ -12,14 +12,14 @@ from telebot import types
 """
 
 # Создает папку logs
-folder_path = os.environ['PWD'] + '/logs'
+folder_path = os.environ['PWD'] + './logs'
 if not os.path.exists(folder_path):
     os.makedirs(folder_path)
 
 # Обьявление путей к файлам (для их создания и не только)
-log_path = os.environ['PWD'] + '/logs/log ' + str(datetime.datetime.now())[:-7] + '.txt'
-new_book_path = os.environ['PWD'] + '/logs/new_book.txt'
-stats_path = os.environ['PWD'] + '/logs/statistics.txt'
+log_path = os.environ['PWD'] + './logs/log ' + str(datetime.datetime.now())[:-7] + '.txt'
+new_book_path = os.environ['PWD'] + './logs/new_book.txt'
+stats_path = os.environ['PWD'] + './logs/statistics.txt'
 
 # Создание нового лога
 f = open(log_path, 'w')
